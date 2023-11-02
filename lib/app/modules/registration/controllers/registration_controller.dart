@@ -48,17 +48,17 @@ class RegistrationController extends GetxController {
     }
   }
 
-  // void showSnack(String message, {isError == true}){
-  //   if(passContr.text != passRepContr.text){
-  //     Get.showSnackbar(
-  //       GetSnackBar(
-  //         message: 'Wrong password',
-  //       backgroundColor: Colors.red,
-  //       duration: Duration(seconds:1), //TODO
-  //       ), 
-  //     );
-  //   }
-  // }
+  void showSnack(String message, {isError == true}){
+    if(passContr.text != passRepContr.text){
+      Get.showSnackbar(
+        GetSnackBar(
+          message: 'Wrong password',
+        backgroundColor: Colors.red,
+        duration: Duration(seconds:1), //TODO
+        ), 
+      );
+    }
+  }
 
   
 

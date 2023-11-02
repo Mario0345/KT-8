@@ -14,7 +14,7 @@ class AuthService extends GetxService {
   ApiService apiService = Get.find();
   bool isLogged = false;
 
-  Dio get client = Dio(BaseOptions(
+  Dio  client = Dio(BaseOptions(
     baseUrl: Constants.baseUrl
   ));
 
