@@ -16,7 +16,7 @@ class HomeView extends GetView<HomeController> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Expanded(
-                  ElevatedButton(onPressed: () => Get.toNamed('/login') , child: Text('Go to Login'),),
+                  ElevatedButton(onPressed: () => Get.toNamed('/loginP') , child: Text('Go to Login'),),
                 
                 // ),
              

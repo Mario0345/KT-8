@@ -13,11 +13,23 @@ class RegistrationView extends GetView<RegistrationController> {
         title: const Text('RegistrationView'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'RegistrationView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: Column(
+        children: [
+          TextField(
+            Text()
+          )
+          TextField(
+            
+          )
+          TextField(
+            
+          )
+          ElevatedButton(onPressed: ()=> Get.toNamed(), child: Text('To signup'),),
+          Text(
+            'RegistrationView is working',
+            style: TextStyle(fontSize: 20),
+          ),
+        ],
       ),
     );
   }

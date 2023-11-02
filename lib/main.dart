@@ -7,7 +7,8 @@ import 'package:kt_8/app/data/services/storage_service.dart';
 
 import 'app/routes/app_pages.dart';
 
-void main() {
+void main() async {
+  await initServices();
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
