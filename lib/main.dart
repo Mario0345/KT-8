@@ -19,7 +19,7 @@ void main() async {
   );
 }
 
-void initServices() async {
+Future<void> initServices() async {
   Get.putAsync(() => StorageService().init());
   Get.putAsync(() => ApiService().init());
   Get.putAsync(() => AuthService().tryAuth());

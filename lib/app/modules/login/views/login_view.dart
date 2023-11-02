@@ -281,6 +281,7 @@ class LoginView extends GetView<LoginController> {
                         // ),
 
                       ],
+                      
                     ),
                     // child: RichText(text: TextSpan(
                     //   children: [

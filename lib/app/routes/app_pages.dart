@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:kt_8/app/middlewares/auth_middleware.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
@@ -14,7 +15,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.SPLASH;
 
   static final routes = [
     GetPage(
@@ -36,6 +37,9 @@ class AppPages {
       name: _Paths.SPLASH,
       page: () => const SplashView(),
       binding: SplashBinding(),
+      middlewares: [
+        AuthMiddleware(),
+      ]
     ),
   ];
 }

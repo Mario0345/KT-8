@@ -6,6 +6,6 @@ abstract class Constants{
 }
 
 abstract class ApiEndpoints{
-  static const registration; 
+  // static const registration = Re; 
 
 }

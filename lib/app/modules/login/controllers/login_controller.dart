@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
+import 'package:kt_8/app/routes/app_pages.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
+  void toRegistration() => Get.toNamed(Routes.REGISTRATION);
+
   Rxn<int> selected = Rxn<int>();
   bool? isChecked =false;
   // final count = 0.obs;

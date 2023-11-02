@@ -8,8 +8,8 @@ class ApiService extends GetxService {
     baseUrl: Constants.baseUrl
   ),);
 
-  bool updateTokens(){
-    
+  bool refreshTokens(){
+    return refreshTokens();
   }
   Future<ApiService> init() async {
     return this;

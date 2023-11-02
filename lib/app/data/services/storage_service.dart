@@ -7,8 +7,8 @@ class StorageService extends GetxService {
   String? getRefreshToken() => _readData('refresh');
   void writeRefreshToken(String token) => _writeData('refresh', token);
     
-  // String? getRefresh(){
-  // }
+  String? getRefresh(){
+  }
 
   void _writeData(String key, String value){
     box.put(key,value);
@@ -21,6 +21,10 @@ class StorageService extends GetxService {
     await Hive.initFlutter();
     box = await Hive.openBox('kt');
     return this;
+  }
+
+  void clearStorage(){
+
   }
 
 }
